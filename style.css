@@ -34,7 +34,7 @@ header {
 /* Style the actual links */
 .navbar li a {
   display: block;
-  color: white;
+  color: #f4b400;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -61,30 +61,48 @@ header {
 }
 
 .home{
-    background:linear-gradient(rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)),
-    url('image2.jpeg') center/cover no-repeat;
+    background:
+    url('image1.jpg') center/contain no-repeat;
    height:90vh;
-   display:block;
-   justify-content:center;
-   align-items:center;
-   text-align:center;
+   display:flex;
+   justify-content:flex-start;
+   align-items:flex-start;
+   text-align:left;
    color:white;
-   padding:20px;
+   padding:80px 60px;
 }
 
-.home h3{
-    font-size:35px;
-    margin-bottom:20px;
-    max-width:900px;
-    color: #770b0b;
+.home-content{
+    width:60%;
 }
 
-.home p{
-    font-size:22px;
-    max-width:700px;
-    color: #770b0b;
+/* PARAGRAPHS */
+.home-content p{
+    font-size:28px;
+    line-height:1.8;
+    color:black;
+    margin-bottom:30px;
+    font-weight:500;
 }
+
+
+
+h1{
+    font-size:52px;
+    text-align:center;
+    color:#f4b400;
+    background:#04792b;
+
+    padding:20px;
+
+    border-left:8px solid #f4b400;
+
+    margin:30px auto;
+    width:90%;
+
+    text-shadow:2px 2px 5px rgba(0,0,0,0.3);
+}
+
 
 .about,
 .services,
@@ -96,7 +114,7 @@ header {
 .services h2,
 .contact h2{
     font-size:38px;
-    color:#59e20f;
+    color:#04792b;
     margin-bottom:25px;
     text-align:center;
     position:relative;
@@ -151,6 +169,19 @@ header {
 }
 
 .image1 img{
+    width:85%;
+    max-width:900px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+.image2{
+    display:flex;
+    justify-content:center;
+    padding:40px 20px;
+    background:white;
+}
+
+.image2 img{
     width:85%;
     max-width:900px;
     border-radius:15px;
