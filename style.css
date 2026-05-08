@@ -224,40 +224,110 @@ footer a:hover{
 /* RESPONSIVE DESIGN */
 @media(max-width:900px){
 
+    /* HEADER */
     header{
         flex-direction:column;
-        padding:20px;
+        padding:15px;
+        text-align:center;
     }
 
+    /* LOGO */
+    .logo img{
+        height:80px;
+        margin-bottom:10px;
+    }
+
+    /* NAVBAR */
     .navbar ul{
+        display:flex;
         flex-direction:column;
         align-items:center;
-        gap:15px;
-        margin-top:15px;
+        gap:10px;
+        margin-right:0;
+        overflow:visible;
     }
 
-    .home h3{
-        font-size:32px;
+    .navbar li{
+        float:none;
+        margin-right:0;
     }
 
-    .home p{
+    .navbar li a{
+        padding:10px 14px;
         font-size:18px;
     }
 
-    .image2 img{
-        width:90%;
+    /* HOME SECTION */
+    .home{
+        height:auto;
+        min-height:100vh;
+
+        background:
+        linear-gradient(rgba(255,255,255,0.6),
+        rgba(255,255,255,0.6)),
+        url('image1.jpg') center/cover no-repeat;
+
+        padding:60px 25px;
+
+        justify-content:center;
+        align-items:center;
+        text-align:center;
     }
 
+    .home-content{
+        width:100%;
+    }
+
+    .home-content p{
+        font-size:20px;
+        line-height:1.6;
+        color:#111;
+    }
+
+    /* MAIN TITLE */
+    h1{
+        font-size:32px;
+        width:95%;
+        padding:18px;
+    }
+
+    /* SECTION SPACING */
     .about,
     .services,
     .contact{
-        padding:60px 6%;
+        padding:60px 20px;
     }
 
+    /* SECTION HEADINGS */
     .about h2,
     .services h2,
     .contact h2{
         font-size:30px;
     }
-}
 
+    /* PARAGRAPHS */
+    .about p,
+    .services p,
+    .contact p{
+        font-size:18px;
+    }
+
+    /* SERVICES LIST */
+    .services ul{
+        padding-left:20px;
+        font-size:17px;
+    }
+
+    /* IMAGES */
+    .image1 img,
+    .image2 img{
+        width:100%;
+        border-radius:10px;
+    }
+
+    /* FOOTER */
+    footer{
+        font-size:15px;
+        padding:20px;
+    }
+}
